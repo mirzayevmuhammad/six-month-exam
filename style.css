@@ -5,6 +5,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+.button1 {
+  width: 80px;
+  height: 26px;
+  background-color: #f4796c;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.button2 {
+  width: 75px;
+  height: 26px;
+  border-radius: 5px;
+  border: none;
+  background-color: #636462fd;
+  margin-bottom: 40px;
+}
+
+.button3 {
+  width: 75px;
+  height: 26px;
+  border-radius: 5px;
+  border: none;
+  background-color: #636462fd;
+}
 
 body {
   font-family: "Manrope", sans-serif;
@@ -71,7 +103,7 @@ body {
   cursor: pointer;
 }
 .app {
-  margin-top: 15px;
+  margin-top: 13px;
   display: flex;
   gap: 15px;
 }
@@ -137,8 +169,8 @@ a:hover {
   display: flex;
 }
 
-.left,
-.right {
+.Mobile-App,
+.Build-Magazine {
   gap: 17px;
   display: flex;
   justify-content: end;
@@ -152,24 +184,12 @@ a:hover {
   box-shadow: 0px -100px 56px -16px rgba(30, 56, 77, 0.938) inset;
 }
 
-.right {
+.Build-Magazine {
   background: url(./images/g_banner_post02.jpg.png);
 }
 
-.left button,
-.right button {
-  width: 80px;
-  height: 26px;
-  background-color: #f4796c;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 13px;
-}
-
-.left h1,
-.right h1 {
+.Mobile-App h1,
+.Build-Magazine h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 35px;
@@ -177,16 +197,16 @@ a:hover {
   text-align: center;
 }
 
-.left .list1 {
+.Mobile-App .list {
   display: flex;
   gap: 17px;
 }
-.right .list1 {
+.Build-Magazine .list {
   display: flex;
   gap: 17px;
 }
 
-.list1 span {
+.list span {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
@@ -204,12 +224,6 @@ a:hover {
   flex-direction: column;
   row-gap: 50px;
   overflow: hidden;
-}
-
-.hero-section {
-  /* display: flex; */
-  /* flex-direction: column; */
-  gap: 50px;
 }
 
 .SVG-text {
@@ -294,19 +308,13 @@ a:hover {
   background: url(./images/Container2.png);
 }
 
-.six button,
-.five button,
-.four button,
-.three button,
-.two button,
-.one button {
+.button3 {
   width: 75px;
   height: 26px;
   border-radius: 5px;
   border: none;
   background-color: #ffffff56;
   color: #fff;
-  margin-bottom: 40px;
 }
 
 .link {
@@ -743,6 +751,7 @@ a:hover {
   row-gap: 50px;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .section-middle {
@@ -750,6 +759,11 @@ a:hover {
   padding: 0 15px;
   display: flex;
   row-gap: 40px;
+}
+
+.middle .info h1,
+.middle .info {
+  color: #fff;
 }
 
 .view {
@@ -787,16 +801,25 @@ a:hover {
   column-gap: 10px;
 }
 
-.sect{
-  display: flex;
-}
-
-.weekly-section {
+.hero-foot {
   padding: 80px 300px;
   display: flex;
   flex-direction: column;
   gap: 50px;
   color: #000;
+}
+
+.weekly-section {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #000;
+}
+
+.weekly-hot {
+  display: flex;
+  column-gap: 50px;
 }
 
 .weekly-cont {
@@ -825,7 +848,119 @@ a:hover {
   height: 26px;
 }
 
-.weekly-info  .read-more{
+.weekly-info .read-more {
   width: 138px;
   height: 36px;
 }
+
+.hot-section {
+  padding-left: 31px;
+  max-width: 351px;
+}
+
+.hot-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.update {
+  max-width: 1290px;
+  padding: 95px 74px;
+  display: flex;
+  background-color: #e8f1f1;
+  column-gap: 40px;
+}
+
+.update h2 {
+  max-width: 275px;
+}
+
+.update input {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  font-style: 14px;
+  line-height: 100%;
+}
+
+.update button {
+  width: 171px;
+  height: 50px;
+  background-color: #f4796c;
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.input-button {
+  display: flex;
+  gap: 7px;
+}
+
+.foot {
+  padding: 200px 315px;
+  background-color: #12253e;
+  display: flex;
+  column-gap: 65px;
+}
+
+.foot-logo img {
+  width: 171px;
+  height: 50px;
+}
+
+.foot-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.foot-logo-text {
+  position: relative;
+  max-width: 264px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.foot-list {
+  display: flex;
+  column-gap: 85px;
+}
+
+.foot-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.horizantal {
+  border-top: 1px solid #3b4a61;
+  padding: 35px 315px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #12253e;
+}
+
+.read-more {
+  width: 136px;
+  height: 36px;
+  border-radius: 7px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #183354;
+  border: 1px solid #cfcfcf;
+}
+
+
